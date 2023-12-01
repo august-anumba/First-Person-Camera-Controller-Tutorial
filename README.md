@@ -1,1 +1,1 @@
-# First-Person-Rigidbody-Movement-Controller-Tutorial-2
+# First-Person-Camera-Controller-Tutorial
