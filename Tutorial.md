@@ -48,7 +48,7 @@ Now we want to make sure that the player can't look up or down past 90 degrees a
 ```.cs
     xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 ```
-To then be granted the abilty to rotate the camera around both the `X` and `Y` axises and the player around only the `Y` axis we use `Quaterion.Euler` alongside `Transform` and `Orientation`:
+To then be granted the abilty to rotate the camera around both the `X` and `Y` axis and the player around only the `Y` axis we use `Quaterion.Euler` alongside `Transform` and `Orientation`:
 
 ```.cs
     transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
@@ -94,11 +94,13 @@ public class PlayerCam : MonoBehaviour
 }
 
 ```
+
+
 ## 2. Unity Player GameObject set-up
 
 We now need to connect various GameObjects together as parent and children as well as attaching the C# Script we just created to a GameObject along with future C# Scripts to other GameObjects.
 
-Firstly create 4 empty `GameObject's` and 1 `Capsule` by right clicking inside the `Hierachy` tab, located by default in the top left, to create and empty GameObject select `Create Empty`, repeat 4 times. To create a Capsule you simply select `3D Object` and select `Capsule`.
+Firstly create 4 empty `GameObject`'s and 1 `Capsule` by right clicking inside the `Hierachy` tab, located by default in the top left, to create and empty GameObject select `Create Empty`, repeat 4 times. To create a Capsule you simply select `3D Object` and select `Capsule`.
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/0f380093-f929-4f30-9684-0f051665505c)
 
@@ -108,11 +110,19 @@ With our first empty GameObject we rename it to `CameraHolder` and drag the `Mai
 
 Then with one empty GameObject, we rename it to `Player` and drag the remaining two empty `GameObject's` and the one `Capsule` into the `Player` GameObject, making `Player` the parent of them.
 
-We also rename the `Capsule` to `PlayerObj` as this will act as our player character/object. Rename one of the 
+We we will also rename the `Capsule` to `PlayerObj` as this will act as our player's visable character, Rename one of the last two remaining empty `GameObject` to  `Orientation` and the other to `CameraPos`. It should all now look like this:
+
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/892a7e91-1bdd-4560-86b3-955495e8f3f0)
 
 
+Selecting the `Player` GameObject we then add the `Rigidbody` Component by clicking the `Add Component` button in the `Inspector` tab on the rightside of unity (while in the default layout). Then searching `Rigidbody` and selecting it.
 
-Selecting the `Player` GameObject we then add the `Rigidbody` Component by clicking the `Add Component` button in the `Inspector` tab on the rightside of unity
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/1c7e353b-6d45-45da-95a8-681a72a9759d)
+
+Ensure that the `Rigidbody`'s `Interpolate` is set to `Interpolate` and select the `X` `Y` and `Z` axis under `Constraints` and `Freeze Rotation` as seen below:
+
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/957af209-deba-4c57-acad-c5f57e84cd10)
+
 
 -------------------------------
 
