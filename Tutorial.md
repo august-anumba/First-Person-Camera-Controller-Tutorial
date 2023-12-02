@@ -4,7 +4,7 @@ This tutorial shows how to create a first person camera controller in Unity.
 
 ## 1. Creating `PlayerCam` C# Script
 
-In your chosen scene, create a new C# script by right clicking and selecting `Create` then `C# Script`.
+In your chosen scene and folder, create a new C# script by right clicking and selecting `Create` then `C# Script`.
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/370bb5c7-007c-40b0-b1c2-0bfe649d0440)
 
@@ -12,7 +12,7 @@ We will be naming this new C# Script `PlayerCam`.
 
 We start my making two floats for the `X` and `Y` sensitivity, we do this by writing the following two lines of code:
 
-```.cs
+```.cs 
     public float sensX;
     public float sensY;
 ```
@@ -105,7 +105,7 @@ Firstly create 4 empty `GameObject`'s and 1 `Capsule` by right clicking inside t
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/0f380093-f929-4f30-9684-0f051665505c)
 -------------------------------
 
-With our first empty GameObject we rename it to `CameraHolder` and rename the `Main Camera` to `PlayerCam` and drag it into `CameraHolder`. This makes the `CameraHolder` GameObject the parent and the `PlayerCam` should be sitting under it as a child with a visable drop down arrow
+With our first empty GameObject we rename it to `CameraHolder` and rename the `Main Camera` to `PlayerCam` and drag it into `CameraHolder`. This makes the `CameraHolder` GameObject the parent and the `PlayerCam` should be sitting under it as a child as seen below:
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/dfab7d75-c9b9-4aa8-a364-22acca7a5bc0)
 -------------------------------
@@ -128,6 +128,47 @@ Ensure that the `Rigidbody`'s `Interpolate` is set to `Interpolate` with `Collis
 -------------------------------
 
 To explain what some of these GameObject's are used for the `Orientation` `GameObject` will be used to store plyer orientation data and `CameraPos` similarly stores the cameras positional data.
+
+## 3. Creating `MoveCamera` C# Script
+
+We also need to add one more simple script to make the camera always move with the player, create a new C# script by right clicking and selecting `Create` then `C# Script`.
+
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/370bb5c7-007c-40b0-b1c2-0bfe649d0440)
+
+We will be naming this new C# Script `MoveCamera`.
+
+The only lines of code we need to write is:
+
+```.cs
+    public Transform cameraPosition;
+```
+and in `void Update()`:
+```.cs
+    transform.position = cameraPosition.position;
+```
+Your complete C# Script should look like this:
+
+```.cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveCamera : MonoBehaviour
+{
+    public Transform cameraPosition;
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        transform.position = cameraPosition.position;
+    }
+}
+
+```
 
 -------------------------------
 
