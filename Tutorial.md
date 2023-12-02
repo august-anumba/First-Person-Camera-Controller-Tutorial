@@ -105,9 +105,9 @@ Firstly create 4 empty `GameObject`'s and 1 `Capsule` by right clicking inside t
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/0f380093-f929-4f30-9684-0f051665505c)
 -------------------------------
 
-With our first empty GameObject we rename it to `CameraHolder` and drag the `Main Camera` into it. This makes the CameraHolder the parent and the Main Camera should be sitting under it as a child with a visable drop down arrow
+With our first empty GameObject we rename it to `CameraHolder` and rename the `Main Camera` to `PlayerCam` and drag it into `CameraHolder`. This makes the `CameraHolder` GameObject the parent and the `PlayerCam` should be sitting under it as a child with a visable drop down arrow
 
-![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/7aed9be4-368f-441a-aa9a-2165ea6f2827)
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/dfab7d75-c9b9-4aa8-a364-22acca7a5bc0)
 -------------------------------
 
 Then with one empty GameObject, we rename it to `Player` and drag the remaining two empty `GameObject's` and the one `Capsule` into the `Player` GameObject, making `Player` the parent of them.
@@ -125,8 +125,9 @@ Selecting the `Player` GameObject we then add the `Rigidbody` Component by click
 Ensure that the `Rigidbody`'s `Interpolate` is set to `Interpolate` with `Collision Detection` set to `Continuous` and select all the `X` `Y` and `Z` axis under `Constraints` and `Freeze Rotation` as seen below:
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/8a9a4e6f-07c0-4e91-9484-26b9534ce246)
+-------------------------------
 
-
+To explain what some of these GameObject's are used for the `Orientation` `GameObject` will be used to store plyer orientation data and `CameraPos` similarly stores the cameras positional data.
 
 -------------------------------
 
