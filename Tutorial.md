@@ -137,7 +137,6 @@ We also need to add one more simple script to make the camera always move with t
 
 We will be naming this new C# Script `MoveCamera`.
 
--------------------------------
 The only lines of code we need to write is:
 
 ```.cs
@@ -170,9 +169,14 @@ public class MoveCamera : MonoBehaviour
 }
 
 ```
+## 2. Attaching C# Scripts to `GameObjects`
 
--------------------------------
+We now attach the `MoveCamera` C# Script to `CameraHolder`, we do this by selecting the `CameraHolder` GameObject and dragging the `Camera Position` script into the `Inspector` (on the right in default layout) or selecting `Add Component` and searching `MoveCamera`. Inside the same `Inspector` we set the `Camera Position` box to the `CameraPos` GameObject either by dragging `CameraPos` script into it or selecting it in the drop down menu. End product:
 
-```.cs
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/b78177ed-3f88-4f62-9189-e1bdccfa0ec3)
 
-```
+We now attach the `PlayerCam` C# Script to `PlayerCam` GameObject, we do this by selecting the `PlayerCam` GameObject in the `Hierarchy` and dragging the `PlayerCam` script into the `Inspector` (on the right in default layout) or selecting `Add Component` and searching `PlayerCam`. Inside the same `Inspector` we set both `Sens X` and `Sens Y` to something like `400`(adjust to your preferance), while setting the `Orientation` box to the `Orientation` GameObject either by dragging `Orientation` GameObject into it or selecting it in the drop down menu. End product:
+
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/a2f8c284-4d69-4482-8175-016b0aef5217)
+
+You can now test the scene you have built yourself, or by running the demo scene provided.
