@@ -96,9 +96,9 @@ public class PlayerCam : MonoBehaviour
 ```
 ## 2. Unity Player GameObject set-up
 
-We now need to connect various GameObjects together as parent as well as attatching the C# Script we just created to a GameObject along with future C# Scripts.
+We now need to connect various GameObjects together as parent and children as well as attaching the C# Script we just created to a GameObject along with future C# Scripts to other GameObjects.
 
-Firstly create 4 empty GameObjects and 1 Capsule by right clicking inside the `Hierachy` tab, located by default in the top left, to create and empty GameObject select `Create Empty`
+Firstly create 4 empty GameObjects and 1 Capsule by right clicking inside the `Hierachy` tab, located by default in the top left, to create and empty GameObject select `Create Empty`. To create a Capsule you simply select 3D Object and select Capsule
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/8f1dd6c7-cc2f-4319-a975-dcd3bd5f0aee)
 
