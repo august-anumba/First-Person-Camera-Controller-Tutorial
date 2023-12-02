@@ -119,9 +119,10 @@ Selecting the `Player` GameObject we then add the `Rigidbody` Component by click
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/1c7e353b-6d45-45da-95a8-681a72a9759d)
 
-Ensure that the `Rigidbody`'s `Interpolate` is set to `Interpolate` and select the `X` `Y` and `Z` axis under `Constraints` and `Freeze Rotation` as seen below:
+Ensure that the `Rigidbody`'s `Interpolate` is set to `Interpolate` with `Collision Detection` set to `Continuous` and select all the `X` `Y` and `Z` axis under `Constraints` and `Freeze Rotation` as seen below:
 
-![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/957af209-deba-4c57-acad-c5f57e84cd10)
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/8a9a4e6f-07c0-4e91-9484-26b9534ce246)
+
 
 
 -------------------------------
