@@ -2,7 +2,11 @@
 
 This tutorial shows how to create a first person camera controller in Unity.
 
+## 1. Creating `PlayerCam` C# Script
+
 In your chosen scene, create a new C# script by right clicking and selecting Create then C# Script.
+
+![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/370bb5c7-007c-40b0-b1c2-0bfe649d0440)
 
 We will be naming this new C# Script `PlayerCam`.
 
@@ -90,6 +94,14 @@ public class PlayerCam : MonoBehaviour
 }
 
 ```
+## 2. Unity Player GameObject set-up
+
+
+4 empty GameObjects and 1 Capsule
+
+
+
+
 
 -------------------------------
 
