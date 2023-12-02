@@ -136,7 +136,7 @@ We also need to add one more simple script to make the camera always move with t
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/370bb5c7-007c-40b0-b1c2-0bfe649d0440)
 
 We will be naming this new C# Script `MoveCamera`.
-
+-------------------------------
 The only lines of code we need to write is:
 
 ```.cs
