@@ -103,10 +103,12 @@ We now need to connect various GameObjects together as parent and children as we
 Firstly create 4 empty `GameObject`'s and 1 `Capsule` by right clicking inside the `Hierachy` tab, located by default in the top left, to create and empty GameObject select `Create Empty`, repeat 4 times. To create a Capsule you simply select `3D Object` and select `Capsule`.
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/0f380093-f929-4f30-9684-0f051665505c)
+-------------------------------
 
 With our first empty GameObject we rename it to `CameraHolder` and drag the `Main Camera` into it. This makes the CameraHolder the parent and the Main Camera should be sitting under it as a child with a visable drop down arrow
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/7aed9be4-368f-441a-aa9a-2165ea6f2827)
+-------------------------------
 
 Then with one empty GameObject, we rename it to `Player` and drag the remaining two empty `GameObject's` and the one `Capsule` into the `Player` GameObject, making `Player` the parent of them.
 
