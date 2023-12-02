@@ -113,11 +113,12 @@ Then with one empty GameObject, we rename it to `Player` and drag the remaining 
 We we will also rename the `Capsule` to `PlayerObj` as this will act as our player's visable character, Rename one of the last two remaining empty `GameObject` to  `Orientation` and the other to `CameraPos`. It should all now look like this:
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/892a7e91-1bdd-4560-86b3-955495e8f3f0)
-
+-------------------------------
 
 Selecting the `Player` GameObject we then add the `Rigidbody` Component by clicking the `Add Component` button in the `Inspector` tab on the rightside of unity (while in the default layout). Then searching `Rigidbody` and selecting it.
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/1c7e353b-6d45-45da-95a8-681a72a9759d)
+-------------------------------
 
 Ensure that the `Rigidbody`'s `Interpolate` is set to `Interpolate` with `Collision Detection` set to `Continuous` and select all the `X` `Y` and `Z` axis under `Constraints` and `Freeze Rotation` as seen below:
 
