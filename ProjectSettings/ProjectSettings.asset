@@ -759,14 +759,14 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 7e48f006-4648-4bc5-9ab4-f69f7334c84c
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: First-Person-Camera-Controller-Tutorial
-  organizationId: unity_a8e12992291d806b3dd9
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
   forceSRGBBlit: 1
   virtualTexturingSupportEnabled: 0
-  genesisOrgId: '5773147342707'
+  genesisOrgId: 
