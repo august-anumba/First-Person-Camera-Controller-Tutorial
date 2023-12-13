@@ -179,4 +179,4 @@ We now attach the `PlayerCam` C# Script to `PlayerCam` GameObject, we do this by
 
 ![image](https://github.com/august-anumba/First-Person-Camera-Controller-Tutorial/assets/146851823/a2f8c284-4d69-4482-8175-016b0aef5217)
 
-You can now test the scene you have built yourself, or by running the demo scene provided.
+You can now test the scene you have built yourself, or by running the `demo` scene provided.
